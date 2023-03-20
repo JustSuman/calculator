@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <style>
+    button {
+      font-size: 200%;
+      width: 40px;
+    }
+
+    input {
+      font-size: 14px;
+      height: 40px;
+      text-align: right;
+    }
+
+    .history {
+      width: 500px;
+      height: 500px;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <tr>
+      <td colspan="4"><input id="display" name="display" disabled></input></td>
+    </tr>
+
+    <tr>
+      <td><button id="button1" value="1" onclick="display(value)">1</button></td>
+      <td><button id="button2" value="2" onclick="display(value)">2</button></td>
+      <td><button id="button3" value="3" onclick="display(value)">3</button></td>
+      <td><button id="addButton" value="+" onclick="display(value)">+</button></td>
+    </tr>
+    <tr>
+      <td><button id="button4" value="4" onclick="display(value)">4</button></td>
+      <td><button id="button5" value="5" onclick="display(value)">5</button></td>
+      <td><button id="button6" value="6" onclick="display(value)">6</button></td>
+      <td><button id="subtractButton" value="-" onclick="display(value)">-</button></td>
+    </tr>
+    <tr>
+      <td><button id="button7" value="7" onclick="display(value)">7</button></td>
+      <td><button id="button8" value="8" onclick="display(value)">8</button></td>
+      <td><button id="button9" value="9" onclick="display(value)">9</button></td>
+      <td><button id="multiplyButton" value="*" onclick="display(value)">*</button></td>
+    </tr>
+    <tr>
+      <td><button id="clearButton" onclick="clear()">C</button></td>
+      <td><button id="button0" value="0" onclick="display(value)">0</button></td>
+      <td><button id="equalsButton" onclick="result()">=</button></td>
+      <td><button id="divideButton" value="/" onclick="display(value)">&#247;</button></td>
+    </tr>
+
+
+
+  </table>
+
+  <span id='output'>
+    <!-- Use this span for writing debug messages or anything else you think will help! -->
+  </span>
+
+  <div class="history" id="history">
+    <h1>History</h1>
+
+  </div>
+  <script src="calc.js"></script>
+
+
+</body>
+
+
+
+</html>
